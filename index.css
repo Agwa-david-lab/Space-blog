@@ -1,0 +1,253 @@
+
+/*when using ul and li you have to nest it and acces it like*/
+*{
+    padding: 0;
+    margin: 0;/* Always do this to remove default padding Nd margie */
+}
+
+main{
+    padding-top: 80px;
+}
+
+footer button{
+    margin-top: 80px;
+}
+
+ img{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.webname{
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-style: italic;
+    
+
+
+    
+}
+
+.navbar {
+    z-index: 2;
+    background-color: black;
+    border-radius: 2px;
+    position: fixed;
+    top: 0; /* Set to the top of the page */
+    width: 100%; /* Full width */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center; /* Center-align the text */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white; /* Use white text for better visibility on a black background */
+    font-size: 24px; /* Adjust font size as needed */
+    padding: 15px 20px; /* Add padding to the top and bottom (15px) and left and right (20px) of each link */
+}
+
+.navbar li{
+    display: inline;
+    margin: 0 10px; /* Add some horizontal margin between list items */
+}
+
+
+
+button{
+    background-color: blue;
+    /*NOE: Buttons padind is not padding but inner padding */
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    left: 70px;
+    display: inline-block;
+    overflow: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ p{
+    font-size: 25px;
+    /* font-weight: bold; */
+    padding-left: 20px;
+}
+
+.secp{
+    width: 1250px;
+    font-size: 25px;
+     font-weight: 550; 
+    padding-left: 40px;
+
+
+}
+
+
+.skywatch{
+    font-size:50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+img[src*="./resources/pictures/spacee-740x463.jpg"]{
+    width: 1300px;
+    height: 600px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+
+#date{
+    padding-left: 0px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+
+}
+
+.skytext{
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 500; /*font-weight: bold;  use for other section*/
+    font-family: serif;
+    color: #050505;
+}
+
+img[src*="data:image/jpeg;base64,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"]{
+    width: 90px;
+    height: 40px;
+    border-radius: 200px;
+}
+
+.sech {
+    /* display: flex;
+    align-items: center; */
+    font-size: 80px;
+    font-weight: 550;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-family: sans-serif;
+    height: 70px;
+    margin: 0 20px; /* Adjust the margin as needed */
+    text-align: center !important;
+    margin-bottom: 70px;
+    margin-right: 200px;
+    padding-left: 90px;
+    padding-bottom: 40px;
+
+}
+.subh{
+    text-align: center;
+    padding-right: 150px;
+    margin-right: 40px;
+    padding-left: 90px;
+    font-size: 70px;
+    font-weight: 100; /* how to centraize elemnts in both verical and hrizontal*/
+    color: rgb(32, 31, 31); /*add date*/
+    font-style: italic;
+    /* display: flex;
+    align-items: center;
+    text-align: center;
+    justify-items: center; */
+}
+
+.newstar {
+    width: 2% !important; /* Adjust the width as needed */
+    height: 30px !important;
+    margin-right: 10px; /* Add margin to the right */
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    font-style: z;
+    
+}
+
+/* .sectionheader{
+    
+
+} */
+
+.secimage{
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+/*
+Certainly! Here are some daily JavaScript projects you can work on using only vanilla JavaScript, without any HTML or frameworks:
+
+To-Do List: Create a simple to-do list application that allows users to add, edit, and delete tasks. You can store tasks in an array or use browser storage.
+
+Calculator: Build a basic calculator that can perform arithmetic operations like addition, subtraction, multiplication, and division.
+
+Weather App: Fetch data from a weather API and display the current weather conditions for a specific location. Allow users to enter a city or use their current location.
+
+Countdown Timer: Develop a countdown timer that counts down to a specific date and time. Add features like pausing and resetting the timer.
+
+Random Quote Generator: Create a program that fetches and displays random quotes from an API. Add a "New Quote" button to load a new quote.
+
+Image Slider: Build an image slider that displays a series of images one at a time. Include navigation buttons to move between images.
+
+Memory Game: Develop a memory card game where users need to match pairs of cards with the same image. Add a timer and a score counter.
+
+Rock, Paper, Scissors: Implement the classic rock, paper, scissors game where the user plays against the computer. Use JavaScript's random number generation to determine the computer's choice.
+
+Browser-based Notepad: Create a simple text editor within the browser where users can write and save notes. Allow users to create multiple notes.
+
+Morse Code Translator: Build a tool that translates text input into Morse code and vice versa. Include a UI for input and output.
+
+Quiz App: Design a quiz application that presents multiple-choice questions to users. Keep track of their score and provide feedback on correct and incorrect answers.
+
+Digital Clock: Create a digital clock that displays the current time and updates in real-time. Customize the clock's appearance with CSS.
+
+Snake Game: Implement the classic Snake game where the player controls a snake to eat food and grow longer. Add collision detection for game over.
+
+Drawing App: Develop a simple drawing application where users can draw with different colors and brush sizes on a canvas. Include options to clear the canvas.
+
+Word Guessing Game: Build a word guessing game where players have to guess a word one letter at a time. Include a hangman drawing for wrong guesses.
+
+These projects can help you practice your JavaScript skills and provide valuable experience in working with DOM manipulation, event handling, and more. You can start with a simple version and gradually add more features as you become more comfortable with JavaScript.
+*/
+
+
+
+
+
+
+
+footer{
+background-color: #050505;
+
+}
+
+.endcredits{
+    color: rgb(660, 660, 660) !important;
+    text-align: center;
+  
+}
+
+.endcredits p{
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+.mp{
+    font-weight: bold;
+}
